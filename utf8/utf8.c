@@ -31,7 +31,7 @@ int Unicode_fromUtf8(const iByteTrain *train, Unicode_rune *nDestination) {
 	}
 
 	int8_t length = 2;
-	for (uint8_t pos = 0x20; (byte & pos) && (pos != 0); pos >> 1) length++;
+	for (uint8_t pos = 0x20; (byte & pos) && (pos != 0); pos = pos >> 1) length++;
 	if (length > 4) {
 		return Unicode_fromUtf8_ERROR;
 	}
