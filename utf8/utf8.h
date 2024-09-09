@@ -1,7 +1,7 @@
 #ifndef UNICODE_UTF8_H
 #define UNICODE_UTF8_H
 
-#include "./rune.h"
+#include "rune.h"
 
 #include <stdint.h>
 

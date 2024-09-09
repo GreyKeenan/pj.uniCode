@@ -1,9 +1,11 @@
 
 default:
+
+test: 
 	gcc -std=c99 -Wpedantic \
-		-iquote . \
-		*.c \
-			unicode/*.c
+		-iquote .. \
+		test/*.c \
+			*.c
 
 run:
 	./a.out
