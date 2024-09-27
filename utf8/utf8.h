@@ -15,7 +15,7 @@ int Unicode_fromUtf8(const iByteTrain *train, Unicode_rune *nDestination);
 #define Unicode_fromUtf8_INVALID 3
 #define Unicode_fromUtf8_MIDDLE 4
 
-int Unicode_toUtf8(Unicode_rune rune, uint8_t *nDestination);
+int Unicode_toUtf8(Unicode_rune rune, uint8_t nDestination[4]);
 //#define Unicode_toUtf8_ERROR -1
 #define Unicode_toUtf8_TOOBIG -2
 /*

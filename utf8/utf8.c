@@ -56,7 +56,7 @@ int Unicode_fromUtf8(const iByteTrain *train, Unicode_rune *nDestination) {
 	return 0;
 }
 
-int Unicode_toUtf8(Unicode_rune rune, uint8_t *nDestination) {
+int Unicode_toUtf8(Unicode_rune rune, uint8_t nDestination[4]) {
 
 	if (rune < UTF8x2_MIN) {
 		if (nDestination != NULL) nDestination[0] = rune;
